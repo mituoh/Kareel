@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ac4-h3-FK8">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Confirm View Controller-->
+        <scene sceneID="vhi-j8-sSo">
+            <objects>
+                <viewController id="ac4-h3-FK8" customClass="ConfirmViewController" customModule="Kareel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZm-9D-M8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="XQU-pC-Rha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RFm-e7-FBq">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="この本でよろしければ、下のボタンを押してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77N-jI-aHo">
+                                <rect key="frame" x="60.5" y="124" width="648" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iF-Kr-DId">
+                                <rect key="frame" x="60" y="205.5" width="648" height="549"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5iF-Kr-DId" secondAttribute="height" multiplier="596:505" id="vCR-VR-CNv"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbX-dE-Z2Y">
+                                <rect key="frame" x="84" y="780" width="600" height="120"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.72156862749999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="BIG-0L-mME"/>
+                                    <constraint firstAttribute="height" constant="120" id="y2m-23-KdU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="自分の携帯番号を入力して本を借りる">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapRentButton:" destination="ac4-h3-FK8" eventType="touchUpInside" id="JJ3-on-gLF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5iF-Kr-DId" firstAttribute="leading" secondItem="RFm-e7-FBq" secondAttribute="leadingMargin" constant="40" id="2qF-Qb-P8I"/>
+                            <constraint firstItem="5iF-Kr-DId" firstAttribute="top" secondItem="77N-jI-aHo" secondAttribute="bottom" constant="50" id="4D0-R7-M9R"/>
+                            <constraint firstItem="XQU-pC-Rha" firstAttribute="top" secondItem="wbX-dE-Z2Y" secondAttribute="bottom" constant="60" id="Knw-GQ-CuK"/>
+                            <constraint firstItem="77N-jI-aHo" firstAttribute="centerX" secondItem="RFm-e7-FBq" secondAttribute="centerX" id="O8X-ed-26h"/>
+                            <constraint firstItem="77N-jI-aHo" firstAttribute="width" secondItem="5iF-Kr-DId" secondAttribute="width" id="VZI-lo-dFK"/>
+                            <constraint firstItem="5iF-Kr-DId" firstAttribute="centerY" secondItem="RFm-e7-FBq" secondAttribute="centerY" id="aH4-Xw-nwo"/>
+                            <constraint firstItem="wbX-dE-Z2Y" firstAttribute="centerX" secondItem="RFm-e7-FBq" secondAttribute="centerX" id="iwk-GO-OnQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5iF-Kr-DId" secondAttribute="trailing" constant="40" id="uAd-sF-4bD"/>
+                            <constraint firstItem="5iF-Kr-DId" firstAttribute="centerX" secondItem="RFm-e7-FBq" secondAttribute="centerX" id="wre-jR-1eH"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="5iF-Kr-DId" id="gJc-pH-XaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGA-JP-AEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377.34375" y="-434.1796875"/>
+        </scene>
+    </scenes>
+</document>

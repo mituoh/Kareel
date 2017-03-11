@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tTh-v8-gOe">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Done View Controller-->
+        <scene sceneID="1hP-1h-amO">
+            <objects>
+                <viewController id="tTh-v8-gOe" customClass="DoneViewController" customModule="Kareel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k62-lV-Bbx"/>
+                        <viewControllerLayoutGuide type="bottom" id="PdH-0P-ayd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3d8-K8-Bd3">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="貸し出し処理が完了しました 🎉📚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1T-Sn-62m">
+                                <rect key="frame" x="87.5" y="250" width="593" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.72156862749999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-q0-PoR">
+                                <rect key="frame" x="110.5" y="422.5" width="547.5" height="115.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以下の期限までにスタッフにご返却ください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOK-dX-MPY">
+                                        <rect key="frame" x="0.0" y="0.0" width="547.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="返却期限　○○月○○日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDD-Ze-rH6">
+                                        <rect key="frame" x="45" y="62.5" width="457.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVO-Fa-zln">
+                                <rect key="frame" x="184" y="740" width="400" height="120"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.72156862749999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="4pk-7H-G6t"/>
+                                    <constraint firstAttribute="height" constant="120" id="NHO-WB-xuG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="閉じる">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapCloseButton:" destination="tTh-v8-gOe" eventType="touchUpInside" id="f3s-n2-S1B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eVO-Fa-zln" firstAttribute="centerX" secondItem="3d8-K8-Bd3" secondAttribute="centerX" id="3hW-of-0IT"/>
+                            <constraint firstItem="HHx-q0-PoR" firstAttribute="centerY" secondItem="3d8-K8-Bd3" secondAttribute="centerY" id="LIq-cx-4aM"/>
+                            <constraint firstItem="H1T-Sn-62m" firstAttribute="top" secondItem="k62-lV-Bbx" secondAttribute="bottom" constant="250" id="Nit-c3-W3S"/>
+                            <constraint firstItem="PdH-0P-ayd" firstAttribute="top" secondItem="eVO-Fa-zln" secondAttribute="bottom" constant="100" id="Ybe-lq-k2Y"/>
+                            <constraint firstItem="H1T-Sn-62m" firstAttribute="centerX" secondItem="3d8-K8-Bd3" secondAttribute="centerX" id="enB-Ei-AYb"/>
+                            <constraint firstItem="HHx-q0-PoR" firstAttribute="centerX" secondItem="3d8-K8-Bd3" secondAttribute="centerX" id="vzg-wQ-YcD"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="returnDateLabel" destination="vDD-Ze-rH6" id="cGP-FE-GkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYE-JV-rbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126.5625" y="82.6171875"/>
+        </scene>
+    </scenes>
+</document>

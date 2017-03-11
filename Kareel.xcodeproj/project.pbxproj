@@ -8,21 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		05AA6A431E73D5060060A147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA6A421E73D5060060A147 /* AppDelegate.swift */; };
-		05AA6A451E73D5060060A147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA6A441E73D5060060A147 /* ViewController.swift */; };
-		05AA6A481E73D5060060A147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A461E73D5060060A147 /* Main.storyboard */; };
+		05AA6A451E73D5060060A147 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA6A441E73D5060060A147 /* LandingViewController.swift */; };
+		05AA6A481E73D5060060A147 /* LandingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A461E73D5060060A147 /* LandingViewController.storyboard */; };
 		05AA6A4A1E73D5060060A147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A491E73D5060060A147 /* Assets.xcassets */; };
 		05AA6A4D1E73D5060060A147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A4B1E73D5060060A147 /* LaunchScreen.storyboard */; };
+		05AA6A571E73E4080060A147 /* BookCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA6A561E73E4080060A147 /* BookCaptureViewController.swift */; };
+		05AA6A591E73E43A0060A147 /* BookCaptureViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A581E73E43A0060A147 /* BookCaptureViewController.storyboard */; };
+		05AA6A5B1E73E8D70060A147 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA6A5A1E73E8D70060A147 /* ConfirmViewController.swift */; };
+		05AA6A5D1E73E8E30060A147 /* ConfirmViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AA6A5C1E73E8E30060A147 /* ConfirmViewController.storyboard */; };
+		05E4E70F1E73EE6C00C01284 /* ISBN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E70E1E73EE6C00C01284 /* ISBN.swift */; };
+		05E4E7121E73F40A00C01284 /* Rent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E7111E73F40A00C01284 /* Rent.swift */; };
+		05E4E7141E73F65100C01284 /* Storyboard+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E7131E73F65100C01284 /* Storyboard+Extentions.swift */; };
+		05E4E7161E73FE9100C01284 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E7151E73FE9100C01284 /* DoneViewController.swift */; };
+		05E4E7181E73FEA000C01284 /* DoneViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E4E7171E73FEA000C01284 /* DoneViewController.storyboard */; };
 		71CB59E4A31BDC980EFAA6B2 /* Pods_Kareel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E6E3ADDB0589C59BF026F3 /* Pods_Kareel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05AA6A3F1E73D5060060A147 /* Kareel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kareel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AA6A421E73D5060060A147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05AA6A441E73D5060060A147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		05AA6A471E73D5060060A147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05AA6A441E73D5060060A147 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		05AA6A471E73D5060060A147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LandingViewController.storyboard; sourceTree = "<group>"; };
 		05AA6A491E73D5060060A147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AA6A4C1E73D5060060A147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05AA6A4E1E73D5060060A147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05AA6A561E73E4080060A147 /* BookCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCaptureViewController.swift; sourceTree = "<group>"; };
+		05AA6A581E73E43A0060A147 /* BookCaptureViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookCaptureViewController.storyboard; sourceTree = "<group>"; };
+		05AA6A5A1E73E8D70060A147 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		05AA6A5C1E73E8E30060A147 /* ConfirmViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConfirmViewController.storyboard; sourceTree = "<group>"; };
+		05E4E70E1E73EE6C00C01284 /* ISBN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBN.swift; sourceTree = "<group>"; };
+		05E4E7111E73F40A00C01284 /* Rent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rent.swift; sourceTree = "<group>"; };
+		05E4E7131E73F65100C01284 /* Storyboard+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extentions.swift"; sourceTree = "<group>"; };
+		05E4E7151E73FE9100C01284 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		05E4E7171E73FEA000C01284 /* DoneViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DoneViewController.storyboard; sourceTree = "<group>"; };
 		3C079CD3475C329A46B34C54 /* Pods-Kareel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kareel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kareel/Pods-Kareel.release.xcconfig"; sourceTree = "<group>"; };
 		41EA9DEBF361B74F8A6BE3B0 /* Pods-Kareel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kareel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kareel/Pods-Kareel.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E6E3ADDB0589C59BF026F3 /* Pods_Kareel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kareel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,14 +79,47 @@
 		05AA6A411E73D5060060A147 /* Kareel */ = {
 			isa = PBXGroup;
 			children = (
+				05AA6A551E73DFA00060A147 /* Controller */,
+				05E4E7101E73F3ED00C01284 /* Model */,
+				05E4E70D1E73EB8300C01284 /* Util */,
 				05AA6A421E73D5060060A147 /* AppDelegate.swift */,
-				05AA6A441E73D5060060A147 /* ViewController.swift */,
-				05AA6A461E73D5060060A147 /* Main.storyboard */,
 				05AA6A491E73D5060060A147 /* Assets.xcassets */,
 				05AA6A4B1E73D5060060A147 /* LaunchScreen.storyboard */,
 				05AA6A4E1E73D5060060A147 /* Info.plist */,
 			);
 			path = Kareel;
+			sourceTree = "<group>";
+		};
+		05AA6A551E73DFA00060A147 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05AA6A441E73D5060060A147 /* LandingViewController.swift */,
+				05AA6A461E73D5060060A147 /* LandingViewController.storyboard */,
+				05AA6A561E73E4080060A147 /* BookCaptureViewController.swift */,
+				05AA6A581E73E43A0060A147 /* BookCaptureViewController.storyboard */,
+				05AA6A5A1E73E8D70060A147 /* ConfirmViewController.swift */,
+				05AA6A5C1E73E8E30060A147 /* ConfirmViewController.storyboard */,
+				05E4E7151E73FE9100C01284 /* DoneViewController.swift */,
+				05E4E7171E73FEA000C01284 /* DoneViewController.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		05E4E70D1E73EB8300C01284 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				05E4E70E1E73EE6C00C01284 /* ISBN.swift */,
+				05E4E7131E73F65100C01284 /* Storyboard+Extentions.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		05E4E7101E73F3ED00C01284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05E4E7111E73F40A00C01284 /* Rent.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		540AC613154575D4A33C90AF /* Frameworks */ = {
@@ -154,7 +205,10 @@
 			files = (
 				05AA6A4D1E73D5060060A147 /* LaunchScreen.storyboard in Resources */,
 				05AA6A4A1E73D5060060A147 /* Assets.xcassets in Resources */,
-				05AA6A481E73D5060060A147 /* Main.storyboard in Resources */,
+				05AA6A5D1E73E8E30060A147 /* ConfirmViewController.storyboard in Resources */,
+				05AA6A591E73E43A0060A147 /* BookCaptureViewController.storyboard in Resources */,
+				05AA6A481E73D5060060A147 /* LandingViewController.storyboard in Resources */,
+				05E4E7181E73FEA000C01284 /* DoneViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,20 +280,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05AA6A451E73D5060060A147 /* ViewController.swift in Sources */,
+				05E4E7161E73FE9100C01284 /* DoneViewController.swift in Sources */,
+				05AA6A451E73D5060060A147 /* LandingViewController.swift in Sources */,
 				05AA6A431E73D5060060A147 /* AppDelegate.swift in Sources */,
+				05E4E7121E73F40A00C01284 /* Rent.swift in Sources */,
+				05E4E70F1E73EE6C00C01284 /* ISBN.swift in Sources */,
+				05E4E7141E73F65100C01284 /* Storyboard+Extentions.swift in Sources */,
+				05AA6A571E73E4080060A147 /* BookCaptureViewController.swift in Sources */,
+				05AA6A5B1E73E8D70060A147 /* ConfirmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		05AA6A461E73D5060060A147 /* Main.storyboard */ = {
+		05AA6A461E73D5060060A147 /* LandingViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				05AA6A471E73D5060060A147 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LandingViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		05AA6A4B1E73D5060060A147 /* LaunchScreen.storyboard */ = {
@@ -352,6 +412,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DRPXHBD2X4;
 				INFOPLIST_FILE = Kareel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mituoh.Kareel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +429,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = DRPXHBD2X4;
 				INFOPLIST_FILE = Kareel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mituoh.Kareel;
 				PRODUCT_NAME = "$(TARGET_NAME)";

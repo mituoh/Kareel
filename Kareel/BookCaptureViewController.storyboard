@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M42-8j-SdJ">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Book Capture View Controller-->
+        <scene sceneID="s63-lp-Chw">
+            <objects>
+                <viewController id="M42-8j-SdJ" customClass="BookCaptureViewController" customModule="Kareel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPu-Wr-awh"/>
+                        <viewControllerLayoutGuide type="bottom" id="C9l-20-Ffd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J4a-U7-mJf">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5w-JM-4Oj">
+                                <rect key="frame" x="60" y="156" width="648" height="648"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g5w-JM-4Oj" secondAttribute="height" multiplier="1:1" id="asG-w7-E0S"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本のバーコードをカメラに写してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7W-QG-BL2">
+                                <rect key="frame" x="60" y="70" width="648" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g7W-QG-BL2" firstAttribute="centerX" secondItem="J4a-U7-mJf" secondAttribute="centerX" id="CLo-lG-LE2"/>
+                            <constraint firstItem="g7W-QG-BL2" firstAttribute="width" secondItem="g5w-JM-4Oj" secondAttribute="width" id="a42-wH-bOx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g5w-JM-4Oj" secondAttribute="trailing" constant="40" id="awU-3E-lFd"/>
+                            <constraint firstItem="g5w-JM-4Oj" firstAttribute="leading" secondItem="J4a-U7-mJf" secondAttribute="leadingMargin" constant="40" id="bkM-kG-Ld8"/>
+                            <constraint firstItem="g5w-JM-4Oj" firstAttribute="top" secondItem="g7W-QG-BL2" secondAttribute="bottom" constant="50" id="gsC-yD-jcf"/>
+                            <constraint firstItem="g5w-JM-4Oj" firstAttribute="centerX" secondItem="J4a-U7-mJf" secondAttribute="centerX" id="nBu-yf-GAp"/>
+                            <constraint firstItem="g5w-JM-4Oj" firstAttribute="centerY" secondItem="J4a-U7-mJf" secondAttribute="centerY" id="qdq-au-mvh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vw8-lL-zwY">
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="Mok-7r-5oC">
+                            <connections>
+                                <action selector="tapCloseButton:" destination="M42-8j-SdJ" id="htt-jD-uvW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="captureView" destination="g5w-JM-4Oj" id="yUO-Ig-S0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhX-JN-PDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="-300"/>
+        </scene>
+    </scenes>
+</document>
